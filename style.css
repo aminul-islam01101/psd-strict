@@ -1,0 +1,322 @@
+/*====== Global Css start========= */
+html{
+    font-size: 62.5%;
+}
+*{
+    font-family: 'Lato', sans-serif, Arial, Helvetica, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;   
+}
+a{
+    text-decoration: none;
+}
+body{
+    color: #999;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.row{
+    width: 100%;
+    float: left;
+}
+.col-12{
+    width:100%;
+    float:left;
+}
+.col-4{
+    width: 33.3332%;
+    float: left;    
+}
+.col-4-offset{
+    margin-left: 33.3332%;    
+}
+.col-6{
+    width: 50%;
+    float: left;    
+}
+.mb-75{
+    margin-bottom: 3.5rem;
+}
+/* =====Global css end========*/
+
+/*========== Header css start=======  */
+header{
+    width: 100%;
+    background-color: #f6f9f9;
+    float: left;
+    padding: 2rem;
+    position: fixed;
+    z-index: 1;    
+}  
+header ul{
+    padding: 0;
+    float: right;
+}
+header ul li{
+    list-style: none;
+    display: inline;
+    margin: .5rem;
+    background: #2d384c;
+    width: 3rem;
+    height: 3rem;
+    padding: 1.5rem;
+    border-radius: 5px; 
+}
+header ul li a{
+    color: #fff;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 3rem;
+}
+header ul li:hover{
+    background: #15a4fa; 
+    color: #fff; 
+}
+/*========== Header css end=======  */
+
+/* ========banner section css=== */
+ .banner{
+    width: 100%;
+    float: left;
+    background: url(images/Banner-bg.png) no-repeat center;
+    background-size: cover;
+    padding-top: 10rem;
+}
+.banner h1{
+    text-align: center;
+    font-weight: 700;
+    font-size: 12rem;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.title-line{
+    height: 2px;
+    width: 50%;
+    background: #15a4fa;
+    margin: 2rem auto 3rem;
+}
+.banner p{
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom:5rem;
+}
+button{
+    padding: 1rem 3.5rem;
+    background: transparent;
+    border: 1px solid #15a4fa ;
+    border-radius: 5px;
+    display: block;
+    width: 18rem;
+    margin: 0 auto;
+    transition: .3s ease-in-out;
+}
+button a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8rem;
+}
+button:hover{
+    background:#15a4fa ;
+}
+.col-12 .fa {
+    font-size: 3.5rem;
+    color: #fff;
+    text-align: center;
+    padding: 3rem 0;
+    display: block;
+    margin: 8rem 0 5rem 0;
+}
+/* ========banner section css=== */
+
+/*=========== about section css start========= */
+.about{
+    background:#f6f9f9 ;
+}
+.about h2{
+    font-size: 4rem;
+    color: #2d3950;
+    text-align: center;
+    padding: 6rem 0 4rem 0;
+}
+.about p{
+    font-size: 2rem;
+    color: #999;
+    text-align: center;
+    line-height: 25px;
+    padding-bottom: 11rem;
+}
+/*=========== about section css end========= */
+.feature{
+    width: 100%;
+    float: left;
+}
+.feature img{
+    display: block;
+    margin: 5rem auto;
+}
+.feature h3{
+    color: #2d3950;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.feature p{
+    font-size: 1.5rem;
+    padding: 0 5rem 4rem ;
+    text-align: center;
+    color: #999999;
+} 
+
+/* Portfolio Css */
+.portfolio{
+    float: left;
+    width: 100%;
+    background:#f6f9f9 ;
+    padding-bottom: 5rem;
+}
+.portfolio h2{
+    font-size: 4rem;
+    color: #2d3950;
+    text-align: center;
+    padding: 6rem 0 1rem 0;
+}
+.portfolio p{
+    font-size: 2rem;
+    color: #999;
+    text-align: center;
+    line-height: 25px;
+    padding-bottom: 11rem;
+}
+.port-item{
+    position: relative;
+    height: 260px;
+    width: 360px;
+    margin: 2rem;
+    overflow: hidden; 
+}
+.item-hover{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgb(44, 172, 252,0);
+    top: 0;
+    left:-100%;
+    transition: .3s ease-in-out;
+    text-align: center;
+}
+.port-item:hover .item-hover{
+    background: rgb(44, 172, 252,0.6);
+    top: 0;
+    left: 0;
+}
+.item-hover ul{
+    padding: 0;
+    display: block;
+    margin-top: 30%;
+}
+.item-hover ul li{
+    list-style: none;
+    display: inline;
+    margin: 0 5px;
+
+}
+.item-hover ul li .fa{
+    color: #fff;
+    font-size: 2rem;
+    border: 1px solid #fff;
+    padding: 10px;    
+}
+/* Contact Section CSS */
+.contact{
+    width: 100%;
+    float: left;
+    background: url(images/contact-bg.png) no-repeat center;
+    padding:4rem 0;
+    background-size: cover;
+}
+.contact h2{
+    text-align: center;
+    color: #fff;
+    font-size: 4.1rem;
+}
+.contact p{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 2rem;
+}
+.form-group{
+    margin-bottom: 2rem;
+}
+.form-control{
+    width: 100%;
+    height: 20px;
+    padding: 1.5rem;
+    color: #fff;
+    border: 1px solid#eee;
+    border-radius: 3px;
+    font-size: 1.rem;
+    background: transparent;
+    text-transform: lowercase;
+}
+.form-control-ta{
+    width: 100%;
+    height: 100px;
+    padding: 1.5rem;
+    color: #fff;
+    border: 1px solid#eee;
+    border-radius: 3px;
+    font-size: 1.rem;
+    background: transparent;
+    text-transform: lowercase;
+}
+.form-group button{
+    float: right;
+    color: #fff;
+    padding: 1rem .5rem;  
+    width: 13rem;  
+}
+button a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.checkbox{
+    margin-right: 1.5rem;
+    margin-top: 1.5rem;
+}
+.form-group label{
+    font-size: 1.5rem;
+}
+/* Footer Section Css */
+footer{
+    width: 100%;
+    float: left;
+    background-color: #f6f9f9;
+    height: 5rem;
+}
+footer p{
+    font-size: 1.5rem;
+    margin-top:2rem ;
+}
+
+footer .social-media{
+    float: right;
+    margin: 2rem 0;
+}
+footer .social-media i{
+    background: #15a4fa;
+    font-size: 2rem;
+    color: #fff; 
+    margin: .5rem;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    border-radius: 3px;  
+}
